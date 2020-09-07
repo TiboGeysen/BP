@@ -1,0 +1,64 @@
+.upload {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction:column;
+  }
+
+  h3{
+      font-family: 'Barlow';
+      font-size: 30px
+  }
+
+  p{
+      font-family: 'Barlow';
+      font-size: 18px;
+  }
+
+  .find-upload{
+      width: 75%;
+  }
+
+  i{
+      margin-right: 10px;
+  }
+
+  .drop-tool{
+    background-color: #003366;
+    margin-bottom: 15px;
+    opacity: 0.9;
+      height: 200px;
+      width: 100%;
+      border: 3px solid  #006655;
+      color: white;
+  }
+
+  .previews{
+      display: flex;
+      flex-direction: row;
+  }
+
+  .upload-tool{
+      width: 100%;
+      display: flex;
+      justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+
+  }
+
+  
+
+  img{
+      height:70px;
+      width: auto;
+  }
+
+  span{
+      text-align: center;
+      margin-bottom: 20px;
+      font-size: 20px;
+      font-family: 'Barlow';
+  }
+  

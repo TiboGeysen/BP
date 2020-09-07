@@ -1,0 +1,21 @@
+.home {
+    display: flex;
+    flex-direction:column;
+
+    font-family: 'Barlow';
+    padding-left: 10px;
+    padding-top: 10px;
+  }
+
+
+  a .fa{
+text-decoration: none;
+color: black;
+font-size: 40px;
+  }
+
+  .fa{
+      padding-right: 20px;
+      cursor: pointer;
+      font-size: 40px;
+  }

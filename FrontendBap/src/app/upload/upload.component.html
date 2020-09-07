@@ -1,0 +1,31 @@
+<div class='content-wrapper upload'>
+    <div class="find-upload">
+        <h3>Find cigarette filters in an image</h3>
+        <p>This upload function is connected to an AI model that will detect and segment cigarette filters in an image (if there are any).
+
+            It serves as a proof of concept for my bachelor's thesis which you can find on the homepage. The predicted images will
+
+            be provided in the download folder where you will be able to download the images that will contains the bounding boxes and mask segmentation of the filters found.
+        </p>
+        <ngx-dropzone class = 'drop-tool' (change)="onFileSelect($event)">
+            <div class='upload-tool'>
+                <img src='../../assets/images/upload.png'>
+                <span>Drop your image(s) here and let the magic happen</span>
+                <button type="button" class="btn btn-primary btn-lg" (click)="fileInput.click()">
+                    <span>Or select image(s)</span>
+                    <input #fileInput type="file" style="display:none;" name = "file" />
+                  </button>
+            </div>
+        </ngx-dropzone>
+        <button (click) ="onSubmit()" type="button" class="btn btn-primary btn-lg find"><i class="fa fa-arrow-circle-right"></i>Find the filters</button>
+        <div class = "previews">
+            <ngx-dropzone-preview *ngFor="let f of files" [removable]="true" (removed)="onRemove(f)">
+                <ngx-dropzone-label>{{ f.name }} ({{ f.type }})</ngx-dropzone-label>
+              </ngx-dropzone-preview>
+        </div>       
+        
+
+        
+    </div>
+        
+</div>

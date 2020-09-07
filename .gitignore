@@ -1,0 +1,8 @@
+node_modules/
+empiricTest/
+venv/
+__pycache__/
+FrontendBap/app.yaml
+FrontendBap/cloudbuild.yaml
+Backend/src/model_final.pth
+Backend/src/config.py

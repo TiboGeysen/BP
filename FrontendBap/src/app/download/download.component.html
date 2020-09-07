@@ -1,0 +1,11 @@
+<div class='content-wrapper'>
+    <mat-grid-list *ngIf="urls.length > 0; else elseBlock" [cols]="breakpoint" (window:resize)="onResize($event)">
+        <mat-grid-tile *ngFor="let url of urls">
+        <app-detailimage [url] = 'url' (url_delete) = "onDelete($event)"></app-detailimage>
+        </mat-grid-tile>
+    </mat-grid-list>
+    <ng-template #elseBlock><p>No pictures yet</p></ng-template>
+</div>
+
+
+
